@@ -1,0 +1,59 @@
+.ProductCard {
+    width: 380px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.discount {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    min-width: 80px;
+    color: white;
+    border-radius: 5px;
+}
+
+.CardImageHolder {
+    position: relative;
+}
+
+.CardImageHolder img {
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+.CardImageHolder .discount {
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.prices {
+    display: flex;
+}
+.prices h4 {
+    margin-right: 10px;
+}
+
+.prices .new {
+    color: var(--primary-color);
+}
+
+.prices .old {
+    color: grey;
+}
+.ratingHolder {
+    display: flex;
+}
+.ratings {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.CategoryCard:hover {
+    /* background-color: rgba(128, 128, 128, 0.034); */
+    cursor: pointer;
+}

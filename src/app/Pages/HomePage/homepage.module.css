@@ -1,0 +1,10 @@
+.homePage {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: var(--leftRight-margin);
+}
+
+.homePage::-webkit-scrollbar {
+    display: none;
+}

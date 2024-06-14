@@ -1,3 +1,20 @@
 :root {
-  
+  --primary-color: rgb(224,68,68);
+  --leftRight-margin: 80px;
+  --grey-color: rgba(134, 134, 134, 0.562);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4 { font-weight: 500; }
+h3 { font-weight: 600; }
+p  { font-weight: 300; }
+img {  }
+
+body {
+    /* width: 100vw; */
 }

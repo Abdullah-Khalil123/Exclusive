@@ -1,0 +1,54 @@
+.NavBar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px var(--leftRight-margin);
+}
+
+.NavBar ul {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+}
+
+.NavBar ul li {
+    font-size: 16px;
+}
+
+.NavBar input[type='text'] {
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.105);
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.InputHolder {
+    position: relative;
+}
+
+.InputHolder img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.InputIconHolder {
+    display: flex;
+    align-items: center;
+}
+
+.LikeCartHolder {
+    
+    width: 80px;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-around;
+}
