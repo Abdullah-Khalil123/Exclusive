@@ -1,0 +1,68 @@
+.SignUp {
+    height: var(--page-height);
+    display: flex;
+}
+
+.SignUpImageHolder {
+    position: relative;
+    /* background-color: red; */
+    width: 50%;
+    /* min-width: 800px; */
+    height: 90%;
+}
+.SignUpFeilds {
+
+    padding-left: 70px;
+    width: 40%;
+    /* background-color: aqua; */
+    height: 80%;
+    /* min-height: 500px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SignUpFeilds h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.SignUpFeilds section > p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.SignUpFeilds input {
+
+    margin-bottom: 10px;
+    max-width: 300px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    padding-left: 2px;
+}
+
+.loginAlready {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.loginAlready span {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .SignUpImageHolder {
+        display: none;
+    }
+    .SignUpFeilds {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 180px;
+        width: 100%;
+    }
+}

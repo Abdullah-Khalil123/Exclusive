@@ -1,21 +1,23 @@
 import React from "react";
 import style from "./homepage.module.css";
-import HomePageNavBar from "@/app/Components/HomePageNavBar";
+import NavBar from "@/app/Components/NavBar";
 import Divider from "@/app/Components/Divider";
 import ProductCard from "@/app/Components/ProductCard";
+import BigButton from "@/app/Components/BigButton";
+import Center from "@/app/Components/Center";
+import BottomNav from "@/app/Components/BottomNav";
 
 const HomePage = () => {
+  const products = Array.from([101, 201, 301, 401, 501, 601]);
+
   return (
     <div>
-      <HomePageNavBar />
-      <Divider />
       <div className={style.homePage}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {products.map((item, index: number) => (
+          <ProductCard key={index} productId={item} />
+        ))}
       </div>
+      <Center child={<BigButton buttonTitle={"View More"} />} />
     </div>
   );
 };

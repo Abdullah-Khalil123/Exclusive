@@ -1,17 +1,25 @@
 import React from "react";
 import style from "./navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import About from "@/app/Pages/About/page";
 
-const TopNavBar = () => {
+const NavBar = () => {
   return (
     <div className={style.NavBar}>
       <h2>Exclusive</h2>
 
       <ul>
-        <li>Home</li>
+        <li>
+          <Link href={"/"}>Home</Link>
+        </li>
         <li>Contact</li>
-        <li>About</li>
-        <li>Sign Up</li>
+        <li>
+          <Link href={"/" + "About"}>About</Link>
+        </li>
+        <li>
+          <Link href={"/" + "SignUp"}>Sign Up</Link>
+        </li>
       </ul>
 
       <div className={style.InputIconHolder}>
@@ -33,4 +41,4 @@ const TopNavBar = () => {
   );
 };
 
-export default TopNavBar;
+export default NavBar;

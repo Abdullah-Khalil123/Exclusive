@@ -16,7 +16,9 @@
 }
 
 .NavBar ul li {
+    position: relative;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .NavBar input[type='text'] {
@@ -51,4 +53,36 @@
     padding: 0px 5px;
     display: flex;
     justify-content: space-around;
+}
+
+
+.NavBar ul li::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.2s;
+    transform-origin: left;
+    background-color: black;
+}
+.NavBar ul li:hover::after {
+    transform: scale(1);
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 900px){
+    .NavBar ul{
+        display: none;
+    }
+
+    .LikeCartHolder {
+        display: none;
+    }
 }

@@ -7,7 +7,7 @@ const Divider = () => {
         height: "1px",
         width: "100%",
         backgroundColor: "var(--grey-color)",
-        marginBottom: "30px",
+        marginBottom: "var(--bottom-margin)",
       }}
     ></div>
   );

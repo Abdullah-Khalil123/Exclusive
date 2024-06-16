@@ -5,7 +5,12 @@ import Image from "next/image";
 import img from "@public/Image/Frame 611.png";
 import star from "@public/Icons/StarFull.svg";
 
-const ProductCard = () => {
+interface ProductCardInterface {
+  productId: number;
+}
+
+const ProductCard: React.FC<ProductCardInterface> = ({ productId }) => {
+  const temp = productId;
   const title = "HAVIT HV-G92 Gamepad";
   const discount = 40;
   const oldPrice = 160;
@@ -17,7 +22,13 @@ const ProductCard = () => {
   return (
     <div className={style.ProductCard}>
       <div className={style.CardImageHolder}>
-        <Image alt="Product Image" src={img} width={350}></Image>
+        <Image
+          alt="Product Image"
+          src={img}
+          layout="fill"
+          objectFit="contain"
+          sizes="small"
+        ></Image>
         <div className={style.discount}>
           <p>-{discount} %</p>
         </div>

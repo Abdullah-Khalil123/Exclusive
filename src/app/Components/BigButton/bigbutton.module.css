@@ -1,0 +1,10 @@
+.bigbutton {
+    background-color: var(--primary-color);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

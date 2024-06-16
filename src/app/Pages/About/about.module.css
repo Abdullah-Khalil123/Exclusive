@@ -1,0 +1,43 @@
+.about {
+    min-height: var(--page-height);
+    padding-left: var(--leftRight-margin);
+}
+
+.StoryImageHolder {
+    display: flex;
+    /* background-color: antiquewhite; */
+}
+.aboutOurStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.aboutOurStory p {
+    font-weight: 400;
+    padding-right: 80px;
+    margin-bottom: 10px;
+}
+.aboutOurStory h1 {
+    margin-bottom: 30px;
+    font-size: 38px;
+    font-weight: 500;
+}
+.imageHolder {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: aqua;
+    flex: 1;
+    height: 60vh;
+}
+
+.ReportCards, .Persons {
+
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px var(--leftRight-margin);
+}
+

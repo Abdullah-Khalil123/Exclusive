@@ -1,0 +1,30 @@
+.PersonCard {
+    /* background-color: red; */
+    width: fit-content;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.PersonImageHolder {
+
+    border-radius: 5px;
+    background-color: var(--grey-color);
+    height: 300px;
+    width: 200px;
+    position: relative;
+}
+
+.PersonCard h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.PersonCard p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.PersonCard section img {
+    margin-right: 5px;
+}

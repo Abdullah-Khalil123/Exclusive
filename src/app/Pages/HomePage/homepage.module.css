@@ -1,8 +1,11 @@
 .homePage {
     display: flex;
+    /* flex-direction: column; */
     overflow-x: scroll;
     overflow-y: hidden;
-    margin-left: var(--leftRight-margin);
+    /* min-height: var(--page-height); */
+    padding-left: var(--leftRight-margin);
+    margin-bottom: var(--bottom-margin);
 }
 
 .homePage::-webkit-scrollbar {

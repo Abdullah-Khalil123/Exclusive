@@ -1,21 +1,27 @@
 .ProductCard {
-    width: 380px;
-    height: 440px;
+    /* width: 380px; */
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 5px;
     margin-right: 10px;
 }
 
 .discount {
     background-color: var(--primary-color);
     padding: 10px 15px;
-    min-width: 80px;
+    font-size: 12px;
+    font-weight: 700;
     color: white;
     border-radius: 5px;
 }
 
 .CardImageHolder {
+    margin-bottom: 20px;
+    height: 100%;
+    min-width: 200px;
     position: relative;
 }
 
@@ -37,6 +43,10 @@
     margin-right: 10px;
 }
 
+.new, .old {
+    margin: 3px 0px;
+    font-size: 14px;
+}
 .prices .new {
     color: var(--primary-color);
 }
@@ -53,7 +63,12 @@
 }
 
 
-.CategoryCard:hover {
-    /* background-color: rgba(128, 128, 128, 0.034); */
+.ProductCard:hover {
+    background-color: rgba(128, 128, 128, 0.034);
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .ProductCard {
+    }
 }
