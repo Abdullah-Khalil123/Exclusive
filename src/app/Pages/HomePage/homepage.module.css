@@ -1,13 +1,13 @@
 .homePage {
-    display: flex;
-    /* flex-direction: column; */
-    overflow-x: scroll;
-    overflow-y: hidden;
-    /* min-height: var(--page-height); */
-    padding-left: var(--leftRight-margin);
-    margin-bottom: var(--bottom-margin);
 }
 
-.homePage::-webkit-scrollbar {
+.products {
+    padding-left: var(--leftRight-margin);
+    display: flex;
+    margin-bottom: var(--bottom-margin);
+    overflow-x: scroll;
+}
+
+.products::-webkit-scrollbar {
     display: none;
 }

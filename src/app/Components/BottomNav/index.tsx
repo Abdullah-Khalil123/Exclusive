@@ -22,7 +22,7 @@ const BottomNav = () => {
             <input type="text" placeholder="Enter Your Email" />
             <Image
               alt="Glass"
-              src={"Icons/cart.svg"}
+              src={"/Icons/cart.svg"}
               width={20}
               height={20}
               className={style.emailIconSend}

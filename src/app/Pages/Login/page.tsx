@@ -1,10 +1,9 @@
 import React from "react";
-import style from "./signup.module.css";
+import style from "./login.module.css";
 import Image from "next/image";
 import BigButton from "@/app/Components/BigButton";
-import Link from "next/link";
 
-const SignUp = () => {
+const Login = () => {
   return (
     <div className={style.SignUpPage}>
       <div className={style.signImageHolder}>
@@ -19,29 +18,19 @@ const SignUp = () => {
 
       <div className={style.SignupFeilds}>
         <div className={style.feilds}>
-          <h3>Create an account</h3>
+          <h3>Log in to Exclusive</h3>
           <p id={style.details}>Enter your details below</p>
-          <input type="text" placeholder="Name" />
           <input type="text" placeholder="Email or Phone Number" />
           <input type="text" placeholder="Password" />
 
-          <BigButton buttonTitle="Create Account" styles={{ width: "100%" }} />
-
-          <p className={style.already}>
-            Already have an account.&nbsp;&nbsp;&nbsp;
-            <span>
-              <Link
-                href={"/" + "Login"}
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                Log in
-              </Link>
-            </span>
-          </p>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <BigButton buttonTitle="Login" styles={{ width: "140px" }} />
+            <p className={style.forgot}>Forgot Password</p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default SignUp;
+export default Login;

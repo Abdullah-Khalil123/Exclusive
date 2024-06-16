@@ -27,14 +27,14 @@ const NavBar = () => {
           <input type="text" placeholder="What are you looking for?" />
           <Image
             alt=""
-            src={"Icons/StarFull.svg"}
+            src={"/Icons/StarFull.svg"}
             height={15}
             width={15}
           ></Image>
         </div>
         <div className={style.LikeCartHolder}>
-          <Image alt="Heart" src={"Icons/heart.svg"} width={20} height={20} />
-          <Image alt="Heart" src={"Icons/cart.svg"} width={20} height={20} />
+          <Image alt="Heart" src={"/Icons/heart.svg"} width={20} height={20} />
+          <Image alt="Heart" src={"/Icons/cart.svg"} width={20} height={20} />
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   async rewrites() {
     return [
       {
@@ -9,6 +10,14 @@ const nextConfig = {
       {
         source: "/SignUp",
         destination: "/Pages/SignUp",
+      },
+      {
+        source: "/Login",
+        destination: "/Pages/Login",
+      },
+      {
+        source: "/Product/:id",
+        destination: "/Pages/Product/:id",
       },
     ];
   },

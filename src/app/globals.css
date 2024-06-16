@@ -4,7 +4,7 @@
   --grey-color: rgba(134, 134, 134, 0.562);
   --bottom-margin: 30px;
 
-  --page-height: calc(100vh - 80px)
+  --page-height: calc(100vh - 80px - var(--bottom-margin))
 }
 
 * {
