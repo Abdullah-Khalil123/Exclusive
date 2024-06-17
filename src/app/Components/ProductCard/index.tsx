@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import style from "./productCard.module.css";
+import style from "./ProdCard.module.css";
 import Image from "next/image";
 import img from "@public/Image/Frame 611.png";
 import star from "@public/Icons/StarFull.svg";
