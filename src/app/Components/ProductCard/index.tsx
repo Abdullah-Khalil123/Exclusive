@@ -41,7 +41,7 @@ const ProductCard: React.FC<ProductCardInterface> = ({ productId }) => {
       <div className={style.ratingHolder}>
         <div className={style.ratings}>
           {ratingStarCount.map((_, index) => (
-            <Image alt="star" width={20} height={20} src={star} />
+            <Image alt="star" width={20} height={20} src={star} key={index} />
           ))}
         </div>
         <h4>{`(${totalratings})`}</h4>
