@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const ProductItem: React.FC<{ params: { id: string } }> = ({ params }) => {
