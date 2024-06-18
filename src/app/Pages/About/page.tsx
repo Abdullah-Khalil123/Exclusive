@@ -6,6 +6,7 @@ import style from "./about.module.css";
 import BottomNav from "@/app/Components/BottomNav";
 import AboutReportCard from "@/app/Components/AboutReportCard";
 import PersonCard from "@/app/Components/PersonCard";
+import nextConfig from "next.config.mjs";
 
 const About = () => {
   return (
@@ -37,7 +38,7 @@ const About = () => {
               objectFit="cover"
               objectPosition="top"
               layout="fill"
-              src={"/Icons/aboutimg.png"}
+              src={nextConfig.basePath + "/Icons/aboutimg.png"}
             ></Image>
           </div>
         </div>

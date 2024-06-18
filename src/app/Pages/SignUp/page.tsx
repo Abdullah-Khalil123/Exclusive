@@ -3,6 +3,7 @@ import style from "./signup.module.css";
 import Image from "next/image";
 import BigButton from "@/app/Components/BigButton";
 import Link from "next/link";
+import nextConfig from "next.config.mjs";
 
 const SignUp = () => {
   return (
@@ -10,7 +11,7 @@ const SignUp = () => {
       <div className={style.signImageHolder}>
         <Image
           alt="img"
-          src={"/Image/phonesignup.png"}
+          src={nextConfig.basePath + "/Image/phonesignup.png"}
           layout="fill"
           objectFit="cover"
           objectPosition="top"

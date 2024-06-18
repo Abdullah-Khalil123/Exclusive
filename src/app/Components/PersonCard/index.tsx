@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import style from "./personCard.module.css";
+import nextConfig from "next.config.mjs";
 
 const PersonCard = () => {
   return (
@@ -9,7 +10,7 @@ const PersonCard = () => {
         <Image
           alt="Person"
           layout="fill"
-          src={"/Image/Frame 611.png"}
+          src={nextConfig.basePath + "/Image/Frame 611.png"}
           objectFit="contain"
         />
       </div>
@@ -17,14 +18,24 @@ const PersonCard = () => {
       <p>Founder & Chairman</p>
 
       <section>
-        <Image alt="social" src={"/Icons/insta.svg"} height={18} width={18} />
         <Image
           alt="social"
-          src={"/Icons/linkedin.svg"}
+          src={nextConfig.basePath + "/Icons/insta.svg"}
           height={18}
           width={18}
         />
-        <Image alt="social" src={"/Icons/twitter.svg"} height={18} width={18} />
+        <Image
+          alt="social"
+          src={nextConfig.basePath + "/Icons/linkedin.svg"}
+          height={18}
+          width={18}
+        />
+        <Image
+          alt="social"
+          src={nextConfig.basePath + "/Icons/twitter.svg"}
+          height={18}
+          width={18}
+        />
       </section>
     </div>
   );

@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import Image from "next/image";
 import style from "./bottomNav.module.css";
 import Center from "../Center";
-
+import nextConfig from "next.config.mjs";
 const BottomNav = () => {
   return (
     <div>
@@ -22,7 +22,7 @@ const BottomNav = () => {
             <input type="text" placeholder="Enter Your Email" />
             <Image
               alt="Glass"
-              src={"/Icons/cart.svg"}
+              src={nextConfig.basePath + "/Icons/cart.svg"}
               width={20}
               height={20}
               className={style.emailIconSend}
@@ -60,7 +60,7 @@ const BottomNav = () => {
           <div className={style.Download}>
             <Image
               alt="Download"
-              src={"/Icons/Download.png"}
+              src={nextConfig.basePath + "/Icons/Download.png"}
               layout="fill"
               objectFit="cover"
             />
