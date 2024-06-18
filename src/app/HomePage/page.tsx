@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./homepage.module.css";
-import ProductCard from "@/app/Components/ProductCard";
-import BigButton from "@/app/Components/BigButton";
-import Center from "@/app/Components/Center";
-import SectionMaker from "@/app/Components/SectionMaker";
+import ProductCard from "@/Components/ProductCard";
+import BigButton from "@/Components/BigButton";
+import Center from "@/Components/Center";
+import SectionMaker from "@/Components/SectionMaker";
 
 const HomePage = () => {
   const products = Array.from([101, 201, 301, 401, 501, 601]);

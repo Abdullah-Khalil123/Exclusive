@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./signup.module.css";
 import Image from "next/image";
-import BigButton from "@/app/Components/BigButton";
+import BigButton from "@/Components/BigButton";
 import Link from "next/link";
 import nextConfig from "next.config.mjs";
 

@@ -1,11 +1,11 @@
-import Divider from "@/app/Components/Divider";
-import NavBar from "@/app/Components/NavBar";
+import Divider from "@/Components/Divider";
+import NavBar from "@/Components/NavBar";
 import React from "react";
 import Image from "next/image";
 import style from "./about.module.css";
-import BottomNav from "@/app/Components/BottomNav";
-import AboutReportCard from "@/app/Components/AboutReportCard";
-import PersonCard from "@/app/Components/PersonCard";
+import BottomNav from "@/Components/BottomNav";
+import AboutReportCard from "@/Components/AboutReportCard";
+import PersonCard from "@/Components/PersonCard";
 import nextConfig from "next.config.mjs";
 
 const About = () => {
