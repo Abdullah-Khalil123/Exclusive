@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: "/Exclusive",
-  // output: "export",
+  output: "export",
+  images: { unoptimized: false },
   async rewrites() {
     return [
       {

@@ -9,9 +9,9 @@ const PersonCard = () => {
       <div className={style.PersonImageHolder}>
         <Image
           alt="Person"
-          layout="fill"
+          fill
+          style={{ objectFit: "contain" }}
           src={nextConfig.basePath + "/Image/Frame 611.png"}
-          objectFit="contain"
         />
       </div>
       <h4>Tom Cruise</h4>

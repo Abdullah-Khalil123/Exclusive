@@ -25,8 +25,8 @@ const ProductCard: React.FC<ProductCardInterface> = ({ productId }) => {
         <Image
           alt="Product Image"
           src={img}
-          layout="fill"
-          objectFit="contain"
+          fill
+          style={{ objectFit: "contain" }}
           sizes="small"
         ></Image>
         <div className={style.discount}>

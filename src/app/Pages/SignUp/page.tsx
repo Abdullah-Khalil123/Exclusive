@@ -12,9 +12,8 @@ const SignUp = () => {
         <Image
           alt="img"
           src={nextConfig.basePath + "/Image/phonesignup.png"}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="top"
+          fill
+          style={{ objectFit: "cover", objectPosition: "top" }}
         />
       </div>
 

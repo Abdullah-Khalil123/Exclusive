@@ -35,9 +35,8 @@ const About = () => {
           <div className={style.imageHolder}>
             <Image
               alt={"image"}
-              objectFit="cover"
-              objectPosition="top"
-              layout="fill"
+              fill
+              style={{ objectFit: "cover", objectPosition: "top" }}
               src={nextConfig.basePath + "/Icons/aboutimg.png"}
             ></Image>
           </div>

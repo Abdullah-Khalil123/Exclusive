@@ -61,8 +61,8 @@ const BottomNav = () => {
             <Image
               alt="Download"
               src={nextConfig.basePath + "/Icons/Download.png"}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
