@@ -1,16 +1,22 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
-const ProductItem = ({ params }: { params: { id: string } }) => {
-  return <div>ProductItem : {params.id}</div>;
-};
+export const dynamicParams = true;
 export async function generateStaticParams() {
-  const products = [{ id: "1" }, { id: "2" }, { id: "3" }];
-
-  return products.map((product) => ({
-    params: {
-      id: product.id,
-    },
-  }));
+  return [{ id: "1" }, { id: "2" }];
 }
+
+// export async function getStaticProps({ params }: any) {
+//   const product = { id: params.id };
+//   return {
+//     props: {
+//       product,
+//     },
+//   };
+// }
+
+const ProductItem: React.FC<{ params: { id: string } }> = ({ params }) => {
+  return <div>ProductItem: {params.id}</div>;
+};
 
 export default ProductItem;
