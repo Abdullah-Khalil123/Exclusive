@@ -7,19 +7,19 @@ const nextConfig = {
     return [
       {
         source: "/About",
-        destination: "/Pages/About",
+        destination: "/About",
       },
       {
         source: "/SignUp",
-        destination: "/Pages/SignUp",
+        destination: "/SignUp",
       },
       {
         source: "/Login",
-        destination: "/Pages/Login",
+        destination: "/Login",
       },
       {
         source: "/Product/:id",
-        destination: "/Pages/Product/:id",
+        destination: "/Product/:id",
       },
     ];
   },
