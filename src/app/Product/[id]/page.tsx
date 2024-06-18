@@ -3,9 +3,9 @@ import React from "react";
 import { useParams } from "next/navigation";
 
 const ProductItem = () => {
-  const params = useParams();
+  const { id } = useParams();
 
-  return <div>ProductItem: {params.id}</div>;
+  return <div>ProductItem: {id}</div>;
 };
 
 export default ProductItem;
