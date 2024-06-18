@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const ProductItem = () => {
-  const { id } = useParams();
-
-  return <div>ProductItem: {id}</div>;
+  const pathName = usePathname();
+  const id = pathName.split("/");
+  return <div>ProductItem: {id[2]}</div>;
 };
 
 export default ProductItem;
