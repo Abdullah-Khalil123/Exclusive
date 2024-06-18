@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import nextConfig from "../../../../next.config.mjs";
 import About from "@/app/Pages/About/page";
 
 const NavBar = () => {
@@ -15,10 +16,10 @@ const NavBar = () => {
         </li>
         <li>Contact</li>
         <li>
-          <Link href={"/" + "About"}>About</Link>
+          <Link href={nextConfig.basePath + "/" + "About"}>About</Link>
         </li>
         <li>
-          <Link href={"/" + "SignUp"}>Sign Up</Link>
+          <Link href={nextConfig.basePath + "/" + "SignUp"}>Sign Up</Link>
         </li>
       </ul>
 
