@@ -17,11 +17,11 @@
 }
 
 .PersonCard h4 {
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 600;
 }
 .PersonCard p {
-    font-size: 12px;
+    /* font-size: 12px; */
     font-weight: 400;
 }
 

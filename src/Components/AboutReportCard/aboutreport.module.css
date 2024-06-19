@@ -29,10 +29,6 @@
     border-radius: 50%;
 }
 
-.AboutReportCard p {
-    font-size: 12px;
-}
-
 .AboutReportCard:hover {
     background-color: var(--primary-color);
     color: white;

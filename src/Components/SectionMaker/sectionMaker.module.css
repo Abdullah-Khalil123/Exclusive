@@ -12,7 +12,7 @@
 }
 
 .SectionMaker p {
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 500;
     color: var(--primary-color);
 }
