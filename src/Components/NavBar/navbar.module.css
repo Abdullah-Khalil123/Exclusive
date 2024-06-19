@@ -85,4 +85,8 @@
     .LikeCartHolder {
         display: none;
     }
+
+    .InputHolder {
+        display: none;
+    }    
 }
