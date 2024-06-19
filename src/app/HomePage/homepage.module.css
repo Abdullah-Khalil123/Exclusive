@@ -1,7 +1,7 @@
 .products {
     padding-left: var(--leftRight-margin);
     display: flex;
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: var(--spacer);
     overflow-x: scroll;
 }
 
@@ -9,8 +9,3 @@
     display: none;
 }
 
-@media screen and (max-width: 700px) {
-    .products {
-        margin-bottom: 0;
-    }
-}

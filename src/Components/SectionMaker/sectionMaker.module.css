@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin-left: var(--leftRight-margin);
+    margin-top: var(--spacer);
 }
 .Box {
     border-radius: 5px;
