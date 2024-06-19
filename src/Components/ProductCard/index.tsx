@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import style from "./ProdCard.module.css";
 import Image from "next/image";
@@ -10,14 +9,11 @@ interface ProductCardInterface {
 }
 
 const ProductCard: React.FC<ProductCardInterface> = ({ productId }) => {
-  const temp = productId;
   const title = "HAVIT HV-G92 Gamepad";
   const discount = 40;
   const oldPrice = 160;
   const newPrice = 120;
   const totalratings = 88;
-
-  const ratingStarCount = Array.from({ length: 5 });
 
   return (
     <div className={style.ProductCard}>
@@ -40,9 +36,11 @@ const ProductCard: React.FC<ProductCardInterface> = ({ productId }) => {
       </div>
       <div className={style.ratingHolder}>
         <div className={style.ratings}>
-          {ratingStarCount.map((_, index) => (
-            <Image alt="star" width={20} height={20} src={star} key={index} />
-          ))}
+          <Image alt="star" width={20} height={20} src={star} />
+          <Image alt="star" width={20} height={20} src={star} />
+          <Image alt="star" width={20} height={20} src={star} />
+          <Image alt="star" width={20} height={20} src={star} />
+          <Image alt="star" width={20} height={20} src={star} />
         </div>
         <h4>{`(${totalratings})`}</h4>
       </div>
