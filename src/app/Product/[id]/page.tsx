@@ -39,7 +39,7 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
         <p>Size: </p>
 
         <div className={style.countBuy}>
-          <ItemCount styles={{ height: "100%" }} />
+          <ItemCount styles={{ height: "100%", marginRight: "10px" }} />
           <BigButton
             buttonTitle="Buy Now"
             styles={{ height: "100%", padding: "0px 40px" }}

@@ -104,10 +104,17 @@
     .ProductPage {
         flex-direction: column;
     }
+    .smallHolder {
+        display: none;
+    }
     .ProductPageImageHolder {
+        aspect-ratio: auto;
         margin-bottom: 40px;
         height: 50vh;
-        width: 100%;
+        width: 90%;
         margin-right: var(--leftRight-margin);
+    }
+    .bigProductImage {
+        width: 100%;
     }
 }
