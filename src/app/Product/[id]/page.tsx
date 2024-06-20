@@ -65,7 +65,7 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
               <Image
                 alt="icon"
                 fill
-                src={`${nextConfig.basePath}/Icons/icon-return.svg`}
+                src={`${nextConfig.basePath}/Icons/return.svg`}
               />
             </div>
             <div className={style.divText}>
