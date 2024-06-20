@@ -76,7 +76,20 @@
     color: black;
 }
 
+.mobileDropDown {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: rotateY(180deg);
+    display: none;
+}
+
 @media screen and (max-width: 900px){
+
+    .mobileDropDown {
+        display: block;
+    }
+    
     .NavBar ul{
         display: none;
     }

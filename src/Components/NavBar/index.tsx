@@ -48,6 +48,14 @@ const NavBar = () => {
           />
         </div>
       </div>
+
+      <div className={style.mobileDropDown}>
+        <Image
+          alt="option"
+          src={`${nextConfig.basePath}/Icons/option.svg`}
+          fill
+        />
+      </div>
     </div>
   );
 };
