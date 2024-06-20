@@ -89,8 +89,11 @@
     .mobileDropDown {
         display: block;
     }
+    .NavBar {
+        height: 50px;
+    }
     .NavBar h2 {
-        font-size: 28px;
+        font-size: 18px;
     }
     .NavBar ul{
         display: none;
