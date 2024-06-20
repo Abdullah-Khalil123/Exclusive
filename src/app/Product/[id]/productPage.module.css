@@ -1,0 +1,113 @@
+.ProductPageImageHolder {
+    width: 60%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-left: var(--leftRight-margin);
+    display: flex;
+}
+
+.ProductPage {
+    display: flex;
+    overflow: hidden;
+}
+
+.smallHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.bigProductImage {
+
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.177);
+}
+
+.smallImageHolder {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.177);
+    height: 23%;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+}
+.ProductInfo {
+
+    margin: 0px var(--leftRight-margin);
+    /* background-color: aqua; */
+}
+
+.ProductInfo h2 {
+    margin-bottom: 10px;
+}
+.ProductInfo h4 {
+
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 20px 0px;
+}
+
+.countBuy {
+
+    margin-top: 10px;
+    display: flex;
+    height: 35px;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diliveryType {
+
+    margin: 20px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.iconDiv {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+}
+.FreeDilivery {
+    display: flex;
+    align-items: center;
+}
+.divText {
+    padding: 10px 20px;
+}
+.divText p {
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.FreeDilivery:first-child {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 700px){
+    .ProductPage {
+        flex-direction: column;
+    }
+    .ProductPageImageHolder {
+        margin-bottom: 40px;
+        height: 50vh;
+        width: 100%;
+        margin-right: var(--leftRight-margin);
+    }
+}
