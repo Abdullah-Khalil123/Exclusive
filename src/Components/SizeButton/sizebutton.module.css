@@ -1,0 +1,21 @@
+.sizeButtons {
+    display: flex;
+}
+.sizeButton {
+    border: 1px solid rgba(100, 100, 100, 0.822);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.sizeButton p {
+    cursor: pointer;
+}
+.sizeButtonActive {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}

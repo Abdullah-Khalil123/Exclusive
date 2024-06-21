@@ -4,6 +4,8 @@ import Image from "next/image";
 import nextConfig from "next.config.mjs";
 import BigButton from "@/Components/BigButton";
 import ItemCount from "@/Components/ItemCount";
+import ShowColorsList from "@/Components/ColorList";
+import SizeButtons from "@/Components/SizeButton";
 
 const ProductPage = ({ params }: { params: { id: string } }) => {
   return (
@@ -35,8 +37,26 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
           inventore?
         </p>
         <div className={style.line}></div>
-        <p>Colors: </p>
-        <p>Size: </p>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "10px",
+          }}
+        >
+          <p style={{ marginRight: "10px", fontWeight: "500" }}>Colors: </p>
+          <ShowColorsList
+            colors={[
+              "rgb(160, 188, 224)",
+              "rgb(219, 68, 68)",
+              "rgb(224, 117, 117)",
+            ]}
+          />
+        </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <p style={{ marginRight: "10px", fontWeight: "500" }}>Size: </p>
+          <SizeButtons sizes={["XS", "S", "M", "L ", "XL"]} />
+        </div>
 
         <div className={style.countBuy}>
           <ItemCount styles={{ height: "100%", marginRight: "10px" }} />

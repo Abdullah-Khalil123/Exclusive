@@ -1,0 +1,31 @@
+
+.colorCirle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.activeBorder {
+
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 50%;
+    width: fit-content;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.InactiveBorder {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 50%;
+    width: fit-content;
+    border: 1.5px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -1,7 +1,6 @@
 .ProductPageImageHolder {
     width: 60%;
     height: 80vh;
-    /* background-color: red; */
     margin-left: var(--leftRight-margin);
     display: flex;
 }
@@ -15,11 +14,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
-    width: fit-content;
     margin-right: 10px;
 }
-
+.smallImageHolder {
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.177);
+    height: 13vw;
+    max-height: 160px;
+    aspect-ratio: 1 / 1;
+    border-radius: 5px;
+}
 .bigProductImage {
 
     position: relative;
@@ -30,18 +34,11 @@
     background-color: rgba(128, 128, 128, 0.177);
 }
 
-.smallImageHolder {
-    position: relative;
-    background-color: rgba(128, 128, 128, 0.177);
-    height: 23%;
-    aspect-ratio: 1 / 1;
-    border-radius: 5px;
-}
+
 .ProductInfo {
 
     margin-left: 50px;
     margin-right: var(--leftRight-margin);
-    /* background-color: aqua; */
 }
 
 .ProductInfo h2 {
@@ -65,7 +62,6 @@
     margin-top: 10px;
     display: flex;
     height: 35px;
-    /* background-color: aquamarine; */
     justify-content: space-between;
     align-items: center;
 }
@@ -82,7 +78,6 @@
     position: relative;
     width: 30px;
     height: 30px;
-    /* border: 1px solid black; */
     margin-left: 20px;
 }
 .FreeDilivery {
@@ -100,6 +95,7 @@
 .FreeDilivery:first-child {
     border-bottom: 1px solid black;
 }
+
 
 @media screen and (max-width: 900px){
     .ProductPage {
