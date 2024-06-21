@@ -7,9 +7,10 @@ const SizeButtons = ({ sizes = [] }: { sizes: string[] }) => {
   const [selectedSize, setSelectedSize] = useState(sizes[0]);
   return (
     <div className={style.sizeButtons}>
-      {sizes.map((size) => (
+      {sizes.map((size, index) => (
         <SizeButton
           size={size}
+          key={index}
           active={selectedSize == size ? true : false}
           setSelected={setSelectedSize}
         />

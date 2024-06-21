@@ -6,8 +6,9 @@ const ShowColorsList = ({ colors = [""] }: { colors: string[] }) => {
   const [selectedColor, setSelectedColor] = useState<string>(colors[0]);
   return (
     <div style={{ display: "flex", alignContent: "center" }}>
-      {colors.map((color) => (
+      {colors.map((color, index) => (
         <ColorsCircle
+          key={index}
           setSelected={setSelectedColor}
           active={selectedColor == color ? true : false}
           color={color}
