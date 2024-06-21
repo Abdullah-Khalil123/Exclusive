@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/Exclusive",
-  output: "export",
+  basePath: "",
+  // output: "export",
 };
 
 export default nextConfig;

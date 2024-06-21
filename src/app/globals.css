@@ -3,7 +3,7 @@
   --leftRight-margin: 80px;
   --grey-color: rgba(134, 134, 134, 0.562);
   --bottom-margin: 30px;
-
+  --spacer: 8px;
   --page-height: calc(100vh - 80px - var(--bottom-margin))
 }
 
@@ -13,20 +13,18 @@
     box-sizing: border-box;
 }
 
-h4 { font-weight: 500; }
-h3 { font-weight: 600; font-size: 16px; }
-p  { font-weight: 300; }
-img {  }
-
-body {
-    /* width: 100vw; */
-}
+p  { font-weight: 300; font-size: clamp(10px , 1vw , 16px);}
+h4 { font-weight: 500; font-size: clamp(12px, 2vw, 14px);}
+h3 { font-weight: 600; font-size: clamp(14px, 3vw, 16px); }
 
 
 @media screen and (max-width: 900px){
   h2 { font-size: 18px;}
 
   :root {
-  --leftRight-margin: 40px;
+  --leftRight-margin: 20px;
   }
+
+  p { font-weight: 300; font-size: clamp(14px , 1vw , 16px);}
+
 }

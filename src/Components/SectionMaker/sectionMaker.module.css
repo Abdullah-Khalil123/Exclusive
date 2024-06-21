@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin-left: var(--leftRight-margin);
+    margin-top: var(--spacer);
 }
 .Box {
     border-radius: 5px;
@@ -12,7 +13,7 @@
 }
 
 .SectionMaker p {
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 500;
     color: var(--primary-color);
 }

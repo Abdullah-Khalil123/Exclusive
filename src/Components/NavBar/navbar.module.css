@@ -17,7 +17,6 @@
 
 .NavBar ul li {
     position: relative;
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -77,7 +76,25 @@
     color: black;
 }
 
+.mobileDropDown {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: rotateY(180deg);
+    display: none;
+}
+
 @media screen and (max-width: 900px){
+
+    .mobileDropDown {
+        display: block;
+    }
+    .NavBar {
+        height: 50px;
+    }
+    .NavBar h2 {
+        font-size: 18px;
+    }
     .NavBar ul{
         display: none;
     }
@@ -85,4 +102,8 @@
     .LikeCartHolder {
         display: none;
     }
+
+    .InputHolder {
+        display: none;
+    }    
 }

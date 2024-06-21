@@ -31,12 +31,9 @@
 }
 
 .feilds h3 {
-    font-size: 26px;
+    /* font-size: 26px; */
     font-weight: 500;
     margin-bottom: 20px;
-}
-.feilds p {
-    font-size: 12px;
 }
 .feilds .forgot {
 

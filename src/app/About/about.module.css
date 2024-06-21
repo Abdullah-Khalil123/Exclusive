@@ -20,7 +20,7 @@
 }
 .aboutOurStory h1 {
     margin-bottom: 30px;
-    font-size: 38px;
+    /* font-size: 38px; */
     font-weight: 500;
 }
 .imageHolder {
@@ -41,3 +41,14 @@
     padding: 0px var(--leftRight-margin);
 }
 
+@media screen and (max-width: 700px){
+    .imageHolder {
+        display: none;
+    }
+    .ReportCards {
+        justify-content: center;
+    }
+    .Persons {
+        justify-content: center;
+    }
+}

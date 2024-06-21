@@ -6,7 +6,7 @@ import Center from "@/Components/Center";
 import SectionMaker from "@/Components/SectionMaker";
 
 const HomePage = () => {
-  const products = Array.from([101, 201, 301, 401, 501, 601]);
+  const products = Array.from([101, 201, 301, 401, 501, 601, 701, 801]);
 
   return (
     <div className={style.homepage}>
