@@ -1,7 +1,5 @@
 .SignUpPage {
-    /* background-color: red; */
     height: calc(var(--page-height) - 5vh);
-
     display: flex;
 }
 
@@ -13,24 +11,19 @@
 }
 
 .SignupFeilds {
-    /* background-color: aquamarine; */
     height: 100%;
     width: 40%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .feilds {
     min-width: 250px;
     width: 70%;
-    /* background-color: blue; */
 }
 
 .feilds h3 {
-    /* font-size: 26px; */
     font-weight: 500;
     margin-bottom: 20px;
 }

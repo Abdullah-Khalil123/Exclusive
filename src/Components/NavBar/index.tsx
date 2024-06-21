@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+"use client";
+import React, { useState } from "react";
 import style from "./navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import nextConfig from "next.config.mjs";
-import About from "@/app/About/page";
 
 const NavBar = () => {
+  const [DropDownShow, setDropDownShow] = useState<boolean>(false);
+
   return (
     <div className={style.NavBar}>
       <h2>Exclusive</h2>
@@ -54,7 +56,30 @@ const NavBar = () => {
           alt="option"
           src={`${nextConfig.basePath}/Icons/option.svg`}
           fill
+          onClick={() => {
+            setDropDownShow(!DropDownShow);
+          }}
         />
+        <div
+          className={style.dropDown}
+          style={{ display: DropDownShow ? "block" : "none" }}
+          onClick={() => {
+            setDropDownShow(false);
+          }}
+        >
+          <h3>
+            <Link href={"/"}>Home</Link>
+          </h3>
+          <h3>
+            <Link href={"/" + "About"}>About</Link>
+          </h3>
+          <h3>
+            <Link href={"/"}>Contact</Link>
+          </h3>
+          <h3>
+            <Link href={"/" + "SignUp"}>Sign Up</Link>
+          </h3>
+        </div>
       </div>
     </div>
   );
