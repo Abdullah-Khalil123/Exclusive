@@ -60,3 +60,12 @@
     cursor: pointer;
     border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 800px){
+    .signImageHolder {
+        display: none;
+    }
+    .SignupFeilds {
+        width: 100%;
+    }
+}
