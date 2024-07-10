@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-p  { font-weight: 300; font-size: clamp(10px , 1vw , 16px);}
+p  { font-weight: 300; font-size: clamp(16px , 5vw , 18px);}
 h4 { font-weight: 500; font-size: clamp(12px, 2vw, 14px);}
 h3 { font-weight: 600; font-size: clamp(14px, 3vw, 16px); }
 
@@ -25,6 +25,6 @@ h3 { font-weight: 600; font-size: clamp(14px, 3vw, 16px); }
   --leftRight-margin: 20px;
   }
 
-  p { font-weight: 300; font-size: clamp(14px , 1vw , 16px);}
+  /* p { font-weight: 300; font-size: clamp(14px , 1vw , 16px);} */
 
 }
