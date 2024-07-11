@@ -10,7 +10,9 @@ const NavBar = () => {
 
   return (
     <div className={style.NavBar}>
-      <h2>Exclusive</h2>
+      <h2>
+        <Link href={"/"}>Exclusive</Link>
+      </h2>
 
       <ul>
         <li>
@@ -42,12 +44,14 @@ const NavBar = () => {
             width={20}
             height={20}
           />
-          <Image
-            alt="Heart"
-            src={nextConfig.basePath + "/Icons/cart.svg"}
-            width={20}
-            height={20}
-          />
+          <Link href={"/Cart"}>
+            <Image
+              alt="Cart"
+              src={nextConfig.basePath + "/Icons/cart.svg"}
+              width={20}
+              height={20}
+            />
+          </Link>
         </div>
       </div>
 

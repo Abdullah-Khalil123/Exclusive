@@ -1,0 +1,82 @@
+.CartPage {
+    padding: 0px var(--leftRight-margin);
+}
+
+.cartTable {
+    width: 100%;
+    margin-bottom: 50px;
+    /* background-color: blue; */
+}
+
+
+.tableHeader th{
+    height: 60px;
+    font-size: 16px;
+    text-align: start;
+    /* background-color: red; */
+}
+
+
+.cartTable th, .cartTable td {
+    min-width: 100px;
+}
+
+.numberInput {
+    padding-left: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 2px var(--grey-color);
+    background-color: transparent;
+    outline: none;
+}
+.ImageProductFlex {
+    display: flex;
+    align-items: center;
+}
+.TableImageHolder {
+
+    margin-right: 15px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.cartTotal {
+
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartTotal h3 {
+    width: 100%;
+    font-size: 20px;
+}
+.cartTotal > div {
+
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.cartTotal > div:last-of-type {
+    border: none;
+}
+
+.cartTotal div p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 700px){
+    .subTotal {
+        display: none;
+    }
+}
