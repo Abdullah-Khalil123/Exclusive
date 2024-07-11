@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import style from "./productPage.module.css";
 import Image from "next/image";
 import nextConfig from "next.config.mjs";
@@ -6,8 +7,24 @@ import BigButton from "@/Components/BigButton";
 import ItemCount from "@/Components/ItemCount";
 import ShowColorsList from "@/Components/ColorList";
 import SizeButtons from "@/Components/SizeButton";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem } from "@/state/Cart/cartSlice";
+import { RootState } from "@/state/store";
 
 const ProductPage = ({ params }: { params: { id: string } }) => {
+  const dispatch = useDispatch();
+  const selector = useSelector((state: RootState) => state.cartSlice.cartItems);
+
+  const [count, setcount] = useState<number>(0);
+  const handleIncrease = () => {
+    setcount((count) => count + 1);
+  };
+  const handleDecrease = () => {
+    if (count >= 1) {
+      setcount((count) => count - 1);
+    }
+  };
+
   return (
     <div className={style.ProductPage}>
       <div className={style.ProductPageImageHolder}>
@@ -59,8 +76,28 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
         </div>
 
         <div className={style.countBuy}>
-          <ItemCount styles={{ height: "100%", marginRight: "10px" }} />
+          <ItemCount
+            styles={{ height: "100%", marginRight: "10px" }}
+            count={count}
+            handleIncrease={handleIncrease}
+            handleDecrease={handleDecrease}
+          />
           <BigButton
+            onClick={() => {
+              if (count != 0) {
+                dispatch(
+                  addItem({
+                    id: parseInt(params.id),
+                    count: count,
+                    size: "XS",
+                  })
+                );
+                // CONSOLE LOG
+                console.log(selector);
+              } else {
+                console.log("ADD ITEM TO CART");
+              }
+            }}
             buttonTitle="Add to Cart"
             styles={{ height: "100%", padding: "0px 40px" }}
           />
